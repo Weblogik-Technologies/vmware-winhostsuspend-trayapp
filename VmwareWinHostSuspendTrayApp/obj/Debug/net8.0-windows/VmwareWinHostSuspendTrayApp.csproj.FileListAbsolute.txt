@@ -1,0 +1,15 @@
+C:\Users\NicolasDion\GitHub\Weblogik Technologies Inc\vmware-winhostsuspend-trayapp\VmwareWinHostSuspendTrayApp\bin\Debug\net8.0-windows\VmwareWinHostSuspendTrayApp.exe
+C:\Users\NicolasDion\GitHub\Weblogik Technologies Inc\vmware-winhostsuspend-trayapp\VmwareWinHostSuspendTrayApp\bin\Debug\net8.0-windows\VmwareWinHostSuspendTrayApp.deps.json
+C:\Users\NicolasDion\GitHub\Weblogik Technologies Inc\vmware-winhostsuspend-trayapp\VmwareWinHostSuspendTrayApp\bin\Debug\net8.0-windows\VmwareWinHostSuspendTrayApp.runtimeconfig.json
+C:\Users\NicolasDion\GitHub\Weblogik Technologies Inc\vmware-winhostsuspend-trayapp\VmwareWinHostSuspendTrayApp\bin\Debug\net8.0-windows\VmwareWinHostSuspendTrayApp.dll
+C:\Users\NicolasDion\GitHub\Weblogik Technologies Inc\vmware-winhostsuspend-trayapp\VmwareWinHostSuspendTrayApp\bin\Debug\net8.0-windows\VmwareWinHostSuspendTrayApp.pdb
+C:\Users\NicolasDion\GitHub\Weblogik Technologies Inc\vmware-winhostsuspend-trayapp\VmwareWinHostSuspendTrayApp\obj\Debug\net8.0-windows\VmwareWinHostSuspendTrayApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NicolasDion\GitHub\Weblogik Technologies Inc\vmware-winhostsuspend-trayapp\VmwareWinHostSuspendTrayApp\obj\Debug\net8.0-windows\VmwareWinHostSuspendTrayApp.AssemblyInfoInputs.cache
+C:\Users\NicolasDion\GitHub\Weblogik Technologies Inc\vmware-winhostsuspend-trayapp\VmwareWinHostSuspendTrayApp\obj\Debug\net8.0-windows\VmwareWinHostSuspendTrayApp.AssemblyInfo.cs
+C:\Users\NicolasDion\GitHub\Weblogik Technologies Inc\vmware-winhostsuspend-trayapp\VmwareWinHostSuspendTrayApp\obj\Debug\net8.0-windows\VmwareWinHostSuspendTrayApp.csproj.CoreCompileInputs.cache
+C:\Users\NicolasDion\GitHub\Weblogik Technologies Inc\vmware-winhostsuspend-trayapp\VmwareWinHostSuspendTrayApp\obj\Debug\net8.0-windows\VmwareWinHostSuspendTrayApp.sourcelink.json
+C:\Users\NicolasDion\GitHub\Weblogik Technologies Inc\vmware-winhostsuspend-trayapp\VmwareWinHostSuspendTrayApp\obj\Debug\net8.0-windows\VmwareWinHostSuspendTrayApp.dll
+C:\Users\NicolasDion\GitHub\Weblogik Technologies Inc\vmware-winhostsuspend-trayapp\VmwareWinHostSuspendTrayApp\obj\Debug\net8.0-windows\refint\VmwareWinHostSuspendTrayApp.dll
+C:\Users\NicolasDion\GitHub\Weblogik Technologies Inc\vmware-winhostsuspend-trayapp\VmwareWinHostSuspendTrayApp\obj\Debug\net8.0-windows\VmwareWinHostSuspendTrayApp.pdb
+C:\Users\NicolasDion\GitHub\Weblogik Technologies Inc\vmware-winhostsuspend-trayapp\VmwareWinHostSuspendTrayApp\obj\Debug\net8.0-windows\VmwareWinHostSuspendTrayApp.genruntimeconfig.cache
+C:\Users\NicolasDion\GitHub\Weblogik Technologies Inc\vmware-winhostsuspend-trayapp\VmwareWinHostSuspendTrayApp\obj\Debug\net8.0-windows\ref\VmwareWinHostSuspendTrayApp.dll
