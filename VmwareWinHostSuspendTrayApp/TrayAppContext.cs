@@ -17,6 +17,7 @@ namespace LogikVmwareWinHostSuspendTrayApp
         private string configPath = Path.Combine(Application.StartupPath, "appsettings.json");
         private string logPath = Path.Combine(Application.StartupPath, "log.txt");
         private HiddenForm hiddenForm;
+        private string startupAppName = "LogikVmwareWinHostSuspendTrayApp"; // valeur par défaut
 
         public TrayAppContext()
         {
@@ -46,18 +47,16 @@ namespace LogikVmwareWinHostSuspendTrayApp
 
         private void UnregisterAndExit()
         {
-            string appName = "VmwareWinHostSuspendTrayApp";
             using (RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\\Microsoft\\Windows\\CurrentVersion\\Run", true))
             {
-                if (key.GetValue(appName) != null)
+                if (key.GetValue(startupAppName) != null)
                 {
-                    key.DeleteValue(appName);
+                    key.DeleteValue(startupAppName);
                     Log("Démarrage automatique désactivé via le menu.");
                 }
             }
             ExitApp();
         }
-
 
         private void SuspendVMs()
         {
@@ -78,13 +77,12 @@ namespace LogikVmwareWinHostSuspendTrayApp
 
         private void RegisterStartup()
         {
-            string appName = "VmwareWinHostSuspendTrayApp";
             string exePath = Application.ExecutablePath;
             using (RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\\Microsoft\\Windows\\CurrentVersion\\Run", true))
             {
-                if ((string)key.GetValue(appName) != exePath)
+                if ((string)key.GetValue(startupAppName) != exePath)
                 {
-                    key.SetValue(appName, exePath);
+                    key.SetValue(startupAppName, exePath);
                     Log("Ajout de l'application au démarrage automatique.");
                 }
             }
@@ -97,8 +95,25 @@ namespace LogikVmwareWinHostSuspendTrayApp
                 if (File.Exists(configPath))
                 {
                     var json = File.ReadAllText(configPath);
-                    var doc = JsonSerializer.Deserialize<Dictionary<string, List<string>>>(json);
-                    vmPaths = doc["VMPaths"];
+                    var doc = JsonSerializer.Deserialize<Dictionary<string, object>>(json);
+
+                    if (doc.TryGetValue("VMPaths", out var vmPathsObj) && vmPathsObj is JsonElement vmPathsElement && vmPathsElement.ValueKind == JsonValueKind.Array)
+                    {
+                        vmPaths = new List<string>();
+                        foreach (var item in vmPathsElement.EnumerateArray())
+                        {
+                            vmPaths.Add(item.GetString());
+                        }
+                    }
+                    else
+                    {
+                        vmPaths = new List<string>();
+                    }
+
+                    if (doc.TryGetValue("StartupAppName", out var startupAppNameObj) && startupAppNameObj is JsonElement startupAppNameElement && startupAppNameElement.ValueKind == JsonValueKind.String)
+                    {
+                        startupAppName = startupAppNameElement.GetString();
+                    }
                 }
                 else
                 {
@@ -113,7 +128,11 @@ namespace LogikVmwareWinHostSuspendTrayApp
 
         private void SaveConfig()
         {
-            var doc = new Dictionary<string, List<string>> { { "VMPaths", vmPaths } };
+            var doc = new Dictionary<string, object>
+            {
+                { "StartupAppName", startupAppName },
+                { "VMPaths", vmPaths }
+            };
             var json = JsonSerializer.Serialize(doc, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(configPath, json);
         }

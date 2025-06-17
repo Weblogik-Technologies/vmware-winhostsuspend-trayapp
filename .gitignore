@@ -12,7 +12,9 @@ v17/
 
 # Standard .NET build artifacts
 bin/
+*/bin/
 obj/
+*/obj/
 *.user
 *.suo
 
