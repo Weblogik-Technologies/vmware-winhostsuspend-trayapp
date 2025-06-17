@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LogikVmwareWinHostSuspendTrayApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7993e9768df54b3ff465812412430fb593edb36f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7188e93e642f022753105393d380b80ed924f67e")]
 [assembly: System.Reflection.AssemblyProductAttribute("LogikVmwareWinHostSuspendTrayApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LogikVmwareWinHostSuspendTrayApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

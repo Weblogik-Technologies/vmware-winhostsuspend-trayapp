@@ -1,3 +1,11 @@
 2025-06-16 19:07:20 - Ajout de l'application au démarrage automatique.
 2025-06-16 19:07:21 - Application démarrée.
 2025-06-16 19:08:04 - Fermeture de l'application.
+2025-06-17 07:43:14 - Ajout de l'application au démarrage automatique.
+2025-06-17 07:43:14 - Application démarrée.
+2025-06-17 07:43:47 - Démarrage automatique désactivé via le menu.
+2025-06-17 07:43:47 - Fermeture de l'application.
+2025-06-17 07:44:11 - Ajout de l'application au démarrage automatique.
+2025-06-17 07:44:11 - Application démarrée.
+2025-06-17 07:44:16 - Démarrage automatique désactivé via le menu.
+2025-06-17 07:44:16 - Fermeture de l'application.
