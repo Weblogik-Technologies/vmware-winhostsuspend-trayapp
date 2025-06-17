@@ -1,0 +1,29 @@
+# Ignore CopilotIndices folder
+CopilotIndices/
+**/CopilotIndices/
+
+# Ignore DesignTimeBuild folder
+DesignTimeBuild/
+**/DesignTimeBuild/
+
+# Ignore v17 folder
+v17/
+**/v17/
+
+# Standard .NET build artifacts
+bin/
+obj/
+*.user
+*.suo
+
+# Visual Studio files
+.vscode/
+*.vcxproj.user
+*.csproj.user
+*.dbmdl
+*.pdb
+*.cache
+*.log
+
+# User-specific files
+*.sln.docstat*
