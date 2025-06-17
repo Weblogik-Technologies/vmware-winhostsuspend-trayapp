@@ -17,6 +17,7 @@ obj/
 *.suo
 
 # Visual Studio files
+.vs/
 .vscode/
 *.vcxproj.user
 *.csproj.user
